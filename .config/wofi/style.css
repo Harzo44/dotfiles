@@ -1,0 +1,72 @@
+* {
+    font-family: "Fira Sans", monospace;
+    font-size: 1rem;
+    outline: none;
+}
+
+window {
+    background: none;
+    border-radius: 30px;
+}
+
+#input {
+    margin: 5px;
+    border-radius: 3px;
+    border: 1px solid #8fbcbb;
+    background-color: #4c566a;
+    color: #eceff4;
+}
+
+#inner-box {
+    background-color: none;
+    border: none;
+}
+
+#outer-box {
+    margin: 2px;
+    padding: 10px;
+    background-color: #2e3440;
+    border-radius: 15px;
+}
+
+#scroll {
+    margin: 5px;
+}
+
+#text {
+    padding: 4px;
+    color: #eceff4;
+}
+
+#entry {
+    border-radius: 0px;
+    background-color: #434c5e;
+}
+
+#entry:first-child {
+    border-radius: 5px 5px 0 0;
+}
+
+#entry:last-child {
+    border-radius: 0 0 5px 5px;
+}
+
+#entry:only-child {
+    border-radius: 5px;
+}
+
+#entry:nth-child(even){
+    background-color: #3b4252;
+}
+
+#entry:selected {
+    background-color: #8fbcbb;
+}
+
+#text:selected {
+    color: #2e3440;
+}
+
+#img {
+    background: transparent;
+}
