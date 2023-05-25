@@ -1,0 +1,110 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 30,
+    "spacing": 4,
+    "modules-left": [
+        "clock",
+	"custom/weather",
+	"custom/pacman",
+	"idle_inhibitor"
+    ],
+    "modules-center": [
+	"wlr/workspaces"
+    ],
+    "modules-right": [
+    	"pulseaudio",
+    	"network",
+        "tray"
+    ],
+    "hyprland/window": {
+        "format": "{}",
+	"separate-outputs": true,
+	"max-length": 50
+    },
+    "wlr/workspaces": {
+        "format": "{icon}",
+        "on-click": "activate",
+        "format-icons": {
+            "urgent": "",
+            "active": "",
+            "default": ""
+        },
+        "sort-by-number": true,
+	"active-only": false,
+	"all-outputs": false,
+	"persistent_workspaces": {
+            "1": ["HDMI-A-1"],
+            "2": ["HDMI-A-1"],
+            "3": ["HDMI-A-1"],
+            "4": ["HDMI-A-1"],
+            "5": ["HDMI-A-1"],
+	    "11": ["DP-3"],
+	    "12": ["DP-3"],
+	    "13": ["DP-3"],
+	    "14": ["DP-3"],
+	    "15": ["DP-3"]
+	}
+    },
+    "tray": {
+        "icon-size": 16,
+        "spacing": 4
+    },
+    "clock": {
+	"interval": 1,
+        "timezone": "Europe/Warsaw",
+        "tooltip-format": false,
+        "format-alt": "󰥔 {:%T    󰸗 %F}",
+	"format": "󰥔 {:%H:%M    󰸗 %e %b}",
+	"on-click-right": "thunderbird -calendar"
+    },
+    "network": {
+        "format-wifi": "{essid} ({signalStrength}%) ",
+        "format-ethernet": "󰈀   {ifname}",
+        "tooltip-format": "{ifname} via {gwaddr} ",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": "⚠ Disconnected",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}",
+	"on-click-middle": "nm-connection-editor"
+    },
+    "pulseaudio": {
+        "format": "{icon} {volume}%{format_source}",
+        "format-bluetooth": " {icon} {volume}%{format_source}",
+        "format-bluetooth-muted": " 󰝟{format_source}",
+        "format-muted": "󰝟 {format_source}",
+        "format-source": "    {volume}%",
+        "format-source-muted": "   ",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "󰋎",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "on-click": "ponymix toggle",
+        "on-click-middle": "ponymix -t source toggle",
+        "on-click-right": "pavucontrol"
+    },
+    "custom/pacman": {
+        "format": "󰏗 {}",
+	"interval": "3600",
+	"return-type": "json",
+	"exec": "$HOME/.local/bin/scripts/checkupdates",
+	"exec-if": "exit 0",
+	"signal": 12,
+	"on-click": "foot paru; pkill waybar; waybar &"
+    },
+    "custom/weather": {
+        "exec": "curl -s 'https://wttr.in/?format=1' | sed 's/  \\+/ /g'",
+        "interval": 3600
+    },
+    "idle_inhibitor": {
+        "format": "<small>{icon}</small>",
+        "format-icons": {
+            "activated": "",
+            "deactivated": ""
+        }
+    }
+}

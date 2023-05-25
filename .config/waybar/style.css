@@ -1,0 +1,120 @@
+@keyframes blink-warning {
+    70% {
+        color: @light;
+    }
+
+    to {
+        color: @light;
+        background-color: @warning;
+    }
+}
+
+@keyframes blink-critical {
+    70% {
+      color: @light;
+    }
+
+    to {
+        color: @light;
+        background-color: @critical;
+    }
+}
+
+@define-color bg #2e3440;
+@define-color light #d8dee9;
+@define-color warning #ebcb8b;
+@define-color critical #bf616a;
+@define-color nord_bg #434c5e;
+@define-color nord_bg_blue #546484;
+@define-color nord_light #d8dee9;
+@define-color nord_light_font #d8dee9;
+@define-color nord_dark_font #434c5e;
+
+* {
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+    margin: 0.1em;
+    outline: none;
+}
+
+tooltip {
+    font-family: "Inter Nerd Font";
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#waybar {
+    background: @bg;
+    color: @light;
+    font-family: "Fira Sans", "Inter Nerd Font";
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#workspaces button {
+    font-weight: bold; /* Somewhy the bar-wide setting is ignored*/
+    padding: 0;
+    opacity: 0.75;
+    background: none;
+    font-size: 1em;
+    color: #d8dee9;
+}
+
+#battery,
+#clock,
+#cpu,
+#memory,
+#network,
+#pulseaudio,
+#temperature,
+#tray,
+#backlight,
+#language,
+#custom-pacman,
+#custom-weather,
+#idle_inhibitor {
+    padding-left: 0.6em;
+    padding-right: 0.6em;
+    border-radius: 5px
+}
+
+#clock,
+#custom-weather {
+    color: @nord_light_font;
+    background: @nord_bg_blue;
+}
+
+#custom-pacman,
+#pulseaudio,
+#network,
+#tray,
+#idle_inhibitor {
+    color: @nord_light_font;
+    background: @nord_bg;
+}
+
+#idle_inhibitor.activated,
+#custom-pacman.urgent {
+    color: @nord_dark_font;
+    background: @nord_light;
+}
+
+#custom-pacman.warning {
+    color: @nord_dark_font;
+    background: @warning;
+}
+
+#workspaces button.persistent {
+    opacity: 0.3;
+}
+
+#workspaces button.active {
+    opacity: 1;
+}
+
+#workspaces button.urgent {
+    color: @warning;
+    opacity: 1;
+}
+
