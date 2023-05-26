@@ -1,7 +1,5 @@
 #!/bin/sh
-updates="$(paru -Qua | wc -l)"
-
-count="$(echo "$(paru -Qua | wc -l) + $(pacman -Qu | wc -l)" | bc)"
+count="$(checkupdates-with-aur | wc -l)"
 
 class="ok"
 if [ "$count" -gt 0 ]; then
