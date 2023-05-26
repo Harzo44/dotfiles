@@ -1,0 +1,16 @@
+#!/bin/sh
+
+INTERVAL="$1"
+WALLPAPER_DIR="$2"
+
+rm -rf ~/.cache/swww/
+swww kill
+
+swww init
+interval_secs="$(echo "60 * ${INTERVAL}" | bc)"
+
+while true; do
+    wallpaper="$(fd '\.(png|jpe?g|gif)$' "$WALLPAPER_DIR" --type f | shuf | head -1)"
+    swww img "$wallpaper"
+    sleep "$interval_secs"
+done

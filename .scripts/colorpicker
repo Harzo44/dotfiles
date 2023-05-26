@@ -1,0 +1,3 @@
+#!/bin/sh
+hyprpicker | tr -d '\n' | wl-copy && \
+    dunstify -t 5000 'Copied color hex code to clipboard'

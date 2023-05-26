@@ -1,0 +1,28 @@
+#!/bin/sh
+
+option="$(printf "⏻   Shutdown\n   Reboot\n   Suspend\n   Hibernate" | \
+          wofi --dmenu -p "Session")"
+
+dialogue_box() {
+    yad --image=gtk-dialog-question \
+	--text="$1"
+}
+
+case $option in
+    *Shutdown)
+        dialogue_box "Are you sure you want to shutdown this computer?" && \
+            systemctl poweroff -i
+        ;;
+    *Reboot)
+        dialogue_box "Are you sure you want to reboot this computer?" && \
+            systemctl reboot -i
+        ;;
+    *Suspend)
+        dialogue_box "Are you sure you want to suspend this computer?" && \
+            systemctl suspend -i
+        ;;
+    *Hibernate)
+        dialogue_box "Are you sure you want to hibernate this computer?" && \
+            systemctl hibernate -i
+        ;;
+esac

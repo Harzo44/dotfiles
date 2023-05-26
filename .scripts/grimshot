@@ -1,0 +1,15 @@
+#!/bin/sh
+filename=~/Pictures/Screenshots/Screenshot_"$(date +'%Y%m%d_%H%M%S').png"
+grimblast copysave area "$filename" || exit 1
+action="$(dunstify \
+    -i "$filename" \
+    -A "open,OPEN" \
+    -t 10000 \
+    "Screenshot saved" \
+    "$filename")"
+
+case "$action" in
+    2) #click
+        xdg-open "$filename"
+	;;
+esac
