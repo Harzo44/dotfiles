@@ -10,7 +10,7 @@ swww init
 interval_secs="$(echo "60 * ${INTERVAL}" | bc)"
 
 while true; do
-    wallpaper="$(fd '\.(png|jpe?g|gif)$' "$WALLPAPER_DIR" --type f | shuf | head -1)"
+    wallpaper="$(fd '\.(png|jpe?g|gif)$' "$WALLPAPER_DIR" --type f --type l -L | shuf | head -1)"
     swww img "$wallpaper"
     sleep "$interval_secs"
 done
