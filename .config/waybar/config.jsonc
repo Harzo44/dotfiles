@@ -2,7 +2,7 @@
     "layer": "top",
     "position": "top",
     "height": 30,
-    "spacing": 4,
+    "spacing": 2,
     "ipc": true,
     "modules-left": [
         "clock",
