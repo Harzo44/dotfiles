@@ -19,7 +19,9 @@
 .gnupg
 .gtkrc-2.0
 .hyprland
-.local
+.local/bin
+.local/share/*
+.local/state
 .minecraft
 .mozilla
 .parallel
@@ -34,6 +36,7 @@
 .vim
 .viminfo
 .vscode-oss
+.wallpapers
 .wget-hsts
 .wine
 .xinitrc
@@ -46,3 +49,4 @@ Pictures
 Scripts
 Videos
 go
+!.local/share/dotfiles
