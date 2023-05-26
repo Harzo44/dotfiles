@@ -3,6 +3,7 @@
     "position": "top",
     "height": 30,
     "spacing": 4,
+    "ipc": true,
     "modules-left": [
         "clock",
 	"custom/weather",
@@ -91,10 +92,10 @@
         "format": "󰏗 {}",
 	"interval": "3600",
 	"return-type": "json",
-	"exec": "$HOME/.local/bin/scripts/checkupdates",
+	"exec": "$HOME/.config/waybar/scripts/checkupdates",
 	"exec-if": "exit 0",
-	"signal": 12,
-	"on-click": "foot paru; pkill waybar; waybar &"
+	"signal": 8,
+	"on-click": "foot paru; pkill -SIGRTMIN+8 waybar"
     },
     "custom/weather": {
         "exec": "curl -s 'https://wttr.in/?format=1' | sed 's/  \\+/ /g'",

@@ -1,0 +1,13 @@
+#!/bin/sh
+updates="$(paru -Qua | wc -l)"
+
+count="$(echo "$(paru -Qua | wc -l) + $(pacman -Qu | wc -l)" | bc)"
+
+class="ok"
+if [ "$count" -gt 0 ]; then
+    class="urgent"
+elif [ "$count" -gt 10 ]; then
+    class="warning"
+fi
+
+echo '{"text": "'$count'", "tooltip": "Updates pending: '$count'", "class": "'$class'"}'
