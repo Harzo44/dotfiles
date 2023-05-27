@@ -29,4 +29,6 @@ elif [ "$count" -gt 10 ]; then
     class="warning"
 fi
 
+[ "$class" = "ok" ] && echo && exit
+
 echo '{"text": "'$count'", "tooltip": "Updates pending: '$count'", "class": "'$class'"}'
