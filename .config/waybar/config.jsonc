@@ -56,7 +56,7 @@
         "tooltip-format": false,
         "format-alt": "󰥔 {:%T    󰸗 %F}",
 	"format": "󰥔 {:%H:%M    󰸗 %e %b}",
-	"on-click-right": "thunderbird -calendar"
+	"on-click-right": "evolution -c calendar"
     },
     "network": {
         "format-wifi": "{essid} ({signalStrength}%) ",
