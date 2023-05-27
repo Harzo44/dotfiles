@@ -7,7 +7,6 @@ x-scheme-handler/webcals=userapp-Thunderbird-9ZNG41.desktop;
 
 [Default Applications]
 application/x-extension-ics=userapp-Thunderbird-9ZNG41.desktop;
-image/*=nvim.desktop;
 image/gif=org.gnome.gThumb.desktop;
 image/jpeg=org.gnome.gThumb.desktop;
 image/jpg=org.gnome.gThumb.desktop;
