@@ -50,6 +50,7 @@ go
 !.config/gtk-4.0
 .config/gtk-4.0/bookmarks
 !.config/hypr
+!.config/mimeapps.list
 !.config/mpv
 .config/mpv/watch_later
 !.config/neofetch

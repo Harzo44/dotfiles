@@ -1,0 +1,24 @@
+[Added Associations]
+audio/flac=mpv.desktop;
+x-scheme-handler/mailto=userapp-Thunderbird-OTFG41.desktop;
+x-scheme-handler/mid=userapp-Thunderbird-OTFG41.desktop;
+x-scheme-handler/webcal=userapp-Thunderbird-9ZNG41.desktop;
+x-scheme-handler/webcals=userapp-Thunderbird-9ZNG41.desktop;
+
+[Default Applications]
+application/x-extension-ics=userapp-Thunderbird-9ZNG41.desktop;
+image/*=nvim.desktop;
+image/gif=org.gnome.gThumb.desktop;
+image/jpeg=org.gnome.gThumb.desktop;
+image/jpg=org.gnome.gThumb.desktop;
+image/png=org.gnome.gThumb.desktop;
+image/webp=org.gnome.gThumb.desktop;
+inode/directory=thunar.desktop;
+message/rfc822=userapp-Thunderbird-OTFG41.desktop;
+text/calendar=userapp-Thunderbird-9ZNG41.desktop;
+text/html=firefox.desktop;
+text/plain=nvim.desktop;
+x-scheme-handler/mailto=userapp-Thunderbird-OTFG41.desktop;
+x-scheme-handler/mid=userapp-Thunderbird-OTFG41.desktop;
+x-scheme-handler/webcal=userapp-Thunderbird-9ZNG41.desktop;
+x-scheme-handler/webcals=userapp-Thunderbird-9ZNG41.desktop;
