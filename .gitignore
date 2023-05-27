@@ -44,6 +44,7 @@ go
 !.config/GIMP/2.10/palettes
 !.config/Thunar
 .config/Thunar/accels.scm
+!.config/fish/conf.d
 !.config/foot
 !.config/gtk-3.0
 .config/gtk-3.0/bookmarks
