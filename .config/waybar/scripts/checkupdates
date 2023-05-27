@@ -1,5 +1,26 @@
 #!/bin/sh
-count="$(checkupdates-with-aur | wc -l)"
+count_file=/tmp/waybar/module/pacman/count
+threshold_date="$(date -d 'now - 15 seconds' +%s)"
+
+while pgrep checkupdates | grep -v $$; do
+    sleep 1
+done
+
+if [ -f "$count_file" ]; then
+    last_update="$(stat --format='%Y' "$count_file")"
+    if [ "$last_update" -ge "$threshold_date" ]; then
+        count="$(cat "$count_file")"
+    else
+        count="$(checkupdates-with-aur | wc -l)"
+        mkdir -p /tmp/waybar/module/pacman
+        echo "$count" > /tmp/waybar/module/pacman/count
+    fi
+else
+    count="$(checkupdates-with-aur | wc -l)"
+    mkdir -p /tmp/waybar/module/pacman
+    echo "$count" > /tmp/waybar/module/pacman/count
+fi
+
 
 class="ok"
 if [ "$count" -gt 0 ]; then
