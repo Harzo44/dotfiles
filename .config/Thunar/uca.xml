@@ -24,4 +24,20 @@
 	<image-files/>
 	<video-files/>
 </action>
+<action>
+	<icon>edit-link</icon>
+	<name>Create a symlink</name>
+	<submenu></submenu>
+	<unique-id>1685231287052604-1</unique-id>
+	<command>ln -s %f &apos;%f (Link)&apos;</command>
+	<description>Create a symlink in current directory</description>
+	<range>1</range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
 </actions>
