@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Upscayl
+Exec=upscayl --enable-features=UseOzonePlatform --ozone-platform=wayland
+Terminal=false
+Type=Application
+Icon=upscayl
+StartupWMClass=Upscayl
+X-AppImage-Version=2.5.1
+Comment=Free and Open Source AI Image Upscaler
+Categories=Graphics;2DGraphics;RasterGraphics;ImageProcessing;
