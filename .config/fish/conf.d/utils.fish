@@ -18,3 +18,8 @@ alias t    tree
 
 # Replace htop with bottom
 alias htop 'btm -b'
+
+# Replace rm with trash-cli
+alias rm 'echo Please use trm instead of rm.'
+alias trm 'trash-put'
+alias trmf '/usr/bin/rm -rfv'
