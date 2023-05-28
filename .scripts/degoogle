@@ -12,10 +12,10 @@ for filename in $argv
             while test $attempt -le 200
                 if test -f $targetname
                     set attempt (math $attempt + 1)
-                    set targetname "$dirname/$rootname-$attempt.png"
+                    set targetname "$dirname/$rootname ($attempt).png"
                     continue
                 end
-                convert "$filename" "$targetname"
+                convert $filename $targetname
                 break
             end
         case '*.webm'
@@ -24,7 +24,17 @@ for filename in $argv
             set -l rootname (echo $basename | string split -f 1 -m 1 -r .)
             set -l targetname "$dirname/$rootname.mp4"
     
-            ffmpeg -i $filename -c:v libx264 -crf 24 $targetname
+            set attempt 0
+            while test $attempt -le 200
+                if test -f $targetname
+                    set attempt (math $attempt + 1)
+                    set targetname "$dirname/$rootname ($attempt).png"
+                    continue
+                end
+                
+		ffmpeg -i $filename -c:v libx264 -crf 24 $targetname
+                break
+            end
         case '*'
             echo "Neither webp nor webm, skipping."
     end
