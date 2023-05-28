@@ -47,6 +47,7 @@ go
 .config/fish/*
 !.config/fish/conf.d
 !.config/foot
+!.config/git
 !.config/gtk-3.0
 .config/gtk-3.0/bookmarks
 !.config/gtk-4.0
