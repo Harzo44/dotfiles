@@ -32,6 +32,7 @@
 .wine
 .xinitrc
 .xsession-errors*
+.yarnrc
 Code
 Documents
 Downloads
