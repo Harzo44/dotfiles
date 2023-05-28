@@ -32,7 +32,7 @@ for filename in $argv
                     continue
                 end
                 
-		ffmpeg -i $filename -c:v libx264 -crf 24 $targetname
+                ffmpeg -i $filename -c:v libx264 -crf 24 $targetname
                 break
             end
         case '*'
