@@ -1,6 +1,18 @@
 #!/bin/sh
+
+target=area
+
+case "$1" in
+    -f|--fullscreen)
+        target=screen
+        shift
+        ;;
+esac
+
 filename=~/Pictures/Screenshots/Screenshot_"$(date +'%Y%m%d_%H%M%S').png"
-grimblast copysave area "$filename" || exit 1
+
+grimblast copysave "$target" "$filename" || exit 1
+
 action="$(dunstify \
     -i "$filename" \
     -A "open,OPEN" \
@@ -11,5 +23,5 @@ action="$(dunstify \
 case "$action" in
     2) #click
         xdg-open "$filename"
-	;;
+        ;;
 esac
