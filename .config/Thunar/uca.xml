@@ -17,7 +17,7 @@
 	<name>Create a symlink</name>
 	<submenu></submenu>
 	<unique-id>1685231287052604-1</unique-id>
-	<command>ln -s %f &apos;%f (Link)&apos;</command>
+	<command>ln -s %f %f\ \(Link\)</command>
 	<description>Create a symlink in current directory</description>
 	<range>1</range>
 	<patterns>*</patterns>
