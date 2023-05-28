@@ -13,4 +13,5 @@ makepkg -si
 
 sed -i 's/^#Color$/Color/' /etc/pacman.conf
 sed -i 's/^ParallelDownloads.*/ParallelDownloads = 5/' /etc/pacman.conf
+sed -i 's/^#VerbosePkgLists$/VerbosePkgLists/' /etc/pacman.conf
 sed -i 's/^#BottomUp$/BottomUp/' /etc/paru.conf
