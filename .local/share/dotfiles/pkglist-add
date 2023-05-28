@@ -1,3 +1,5 @@
+adobe-source-code-pro-fonts
+adobe-source-han-sans-otc-fonts
 adwaita-qt5
 adwaita-qt6
 bottom
@@ -24,6 +26,8 @@ neofetch
 neovim
 networkmanager
 nm-connection-editor
+noto-fonts
+noto-fonts-extra
 otf-fira-sans
 polkit
 polkit-gnome
@@ -34,6 +38,9 @@ starship
 sudo
 thunar
 ttf-jetbrains-mono-nerd
+ttf-ms-win11-auto
+ttf-roboto
+ttf-twemoji
 tumbler
 udiskie
 wl-clipboard
