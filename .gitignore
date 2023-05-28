@@ -65,4 +65,5 @@ go
 !.config/xfce4
 .config/xfce4/xfconf/
 !.config/xsettingsd
+!.local/share/applications
 !.local/share/dotfiles
