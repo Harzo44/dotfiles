@@ -71,6 +71,7 @@ tooltip {
 #tray,
 #backlight,
 #language,
+#submap,
 #custom-pacman,
 #custom-weather,
 #idle_inhibitor {
@@ -89,13 +90,15 @@ tooltip {
 #pulseaudio,
 #network,
 #tray,
-#idle_inhibitor {
+#idle_inhibitor,
+#language {
     color: @nord_light_font;
     background: @nord_bg;
 }
 
 #idle_inhibitor.activated,
-#custom-pacman.urgent {
+#custom-pacman.urgent,
+#submap {
     color: @nord_dark_font;
     background: @nord_light;
 }

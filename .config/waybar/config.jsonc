@@ -7,12 +7,14 @@
         "clock",
         "custom/weather",
         "custom/pacman",
-        "idle_inhibitor"
+        "idle_inhibitor",
+	"hyprland/submap"
     ],
     "modules-center": [
         "wlr/workspaces"
     ],
     "modules-right": [
+	"hyprland/language",
         "pulseaudio",
         "network",
         "tray"
@@ -115,5 +117,13 @@
             "activated": "",
             "deactivated": ""
         }
+    },
+    "hyprland/submap": {
+        "format": "{}",
+        "tooltip": false
+    },
+    "hyprland/language": {
+        "format": "  {}",
+	"on-click-right": "~/.scripts/system/kblayout-picker"
     }
 }
