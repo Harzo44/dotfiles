@@ -1,7 +1,6 @@
 ignore-empty-password
-disable-caps-lock-text
+#disable-caps-lock-text
 font=Fira Sans
-color=2E3440
 effect-blur=12x5
 indicator
 indicator-radius=120
@@ -9,13 +8,32 @@ indicator-thickness=20
 clock
 timestr=%R
 datestr=%A, %d %B
-ring-color=4C566A
+color=2E3440
+bs-hl-color=BF616A
 key-hl-color=A3BE8C
+
 line-color=2E3440
+ring-color=4C566A
 separator-color=3B4252
+text-color=D8DEE9
 inside-color=3B4252
-bs-hl-color=A3BE8C
+
 layout-bg-color=3B4252
 layout-border-color=4C566A
 layout-text-color=D8DEE9
-text-color=D8DEE9
+
+text-clear-color=D8DEE9
+ring-clear-color=88C0D0
+inside-clear-color=3B4252
+
+text-caps-lock-color=D8DEE9
+inside-caps-lock-color=3B4252
+ring-caps-lock-color=D08770
+
+text-ver-color=D8DEE9
+ring-ver-color=5E81AC
+inside-ver-color=3B4252
+
+text-wrong-color=D8DEE9
+ring-wrong-color=bf616a
+inside-wrong-color=3B4252
