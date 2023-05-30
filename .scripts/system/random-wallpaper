@@ -11,6 +11,10 @@ interval_secs="$(echo "60 * ${INTERVAL}" | bc)"
 
 while true; do
     wallpaper="$(fd '\.(png|jpe?g|gif)$' "$WALLPAPER_DIR" --type f --type l -L | shuf | head -1)"
+    if [ -z "$wallpaper" ]; then
+        echo "Couldn't find any wallpapers. Abort" >&2
+        exit 1
+    fi
     ln -sf "$wallpaper" "/run/user/$(id -u)/.current-wallpaper"
     swww img "$wallpaper"
     sleep "$interval_secs"
