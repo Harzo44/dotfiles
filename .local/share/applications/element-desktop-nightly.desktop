@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Element-Nightly
+Exec=/usr/bin/element-desktop-nightly %U --enable-features=UseOzonePlatform --ozone-platform=wayland
+Terminal=false
+Type=Application
+Icon=element-desktop-nightly
+StartupWMClass=Element-Nightly
+Comment=A feature-rich client for Matrix.org (nightly unstable build)
+MimeType=x-scheme-handler/element;
+Categories=Network;InstantMessaging;Chat;
