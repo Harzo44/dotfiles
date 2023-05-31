@@ -42,6 +42,7 @@ Scripts
 Videos
 go
 !.config/GIMP/2.10/palettes
+!.config/Kvantum
 !.config/Thunar
 .config/Thunar/accels.scm
 !.config/fish
