@@ -1,5 +1,6 @@
 #!/bin/sh
 
-foot 'paru && echo 0 > /tmp/waybar/module/pacman/count'
+mkdir -p /tmp/waybar/module/pacman
+footclient bash -c 'paru && echo 0 > /tmp/waybar/module/pacman/count'
 pkill waybar
 waybar &
