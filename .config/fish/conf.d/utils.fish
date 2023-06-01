@@ -20,6 +20,8 @@ alias t    tree
 alias htop 'btm -b'
 
 # Replace rm with trash-cli
-alias rm 'echo Please use trm instead of `rm`. If you want to forcefully, recursively remove a file/directory, use `trmf`.'
+function rm
+    echo Please use trm instead of `rm`. If you want to forcefully, recursively remove a file/directory, use `trmf`.
+end
 alias trm trash-put
 alias trmf '/usr/bin/rm -rfv'
