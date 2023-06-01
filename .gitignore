@@ -10,7 +10,7 @@
 .gnupg
 .gtkrc-2.0
 .hyprland
-.local/bin
+.local/bin/*
 .local/share/*
 .local/state
 .minecraft
@@ -68,5 +68,6 @@ go
 !.config/xfce4
 .config/xfce4/xfconf/
 !.config/xsettingsd
+!.local/bin/scripts/
 !.local/share/applications
 !.local/share/dotfiles

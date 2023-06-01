@@ -33,7 +33,7 @@
 	<name>Degoogle</name>
 	<submenu></submenu>
 	<unique-id>1685216951025684-1</unique-id>
-	<command>~/.scripts/degoogle %F</command>
+	<command>~/.local/bin/scripts/degoogle %F</command>
 	<description>Convert WebP and WebM to PNG and MP4 respectively</description>
 	<range>*</range>
 	<patterns>*.webp;*.webm</patterns>

@@ -1,4 +1,4 @@
-fish_add_path ~/.scripts
+fish_add_path ~/.local/bin/scripts
 
 # Make square jpg (for covert art)
 function pic2jsq

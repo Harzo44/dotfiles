@@ -124,6 +124,6 @@
     },
     "hyprland/language": {
         "format": "  {}",
-	"on-click-right": "~/.scripts/system/kblayout-picker"
+	"on-click-right": "~/.local/bin/scripts/system/kblayout-picker"
     }
 }
