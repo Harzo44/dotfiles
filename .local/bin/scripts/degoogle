@@ -6,7 +6,7 @@ for filename in $argv
             set -l basename (basename $filename)
             set -l dirname (dirname $filename)
             set -l rootname (echo $basename | string split -f 1 -m 1 -r .)
-            set targetname "$dirname/$rootname.png"
+            set -l targetname "$dirname/$rootname.png"
     
             set attempt 0
             while test $attempt -le 200
@@ -28,7 +28,7 @@ for filename in $argv
             while test $attempt -le 200
                 if test -f $targetname
                     set attempt (math $attempt + 1)
-                    set targetname "$dirname/$rootname ($attempt).png"
+                    set targetname "$dirname/$rootname ($attempt).mp4"
                     continue
                 end
                 
