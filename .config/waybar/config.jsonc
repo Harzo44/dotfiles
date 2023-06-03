@@ -103,9 +103,9 @@
         "format": "󰏗 {}",
         "interval": "3600",
         "return-type": "json",
-        "exec": "$HOME/.config/waybar/scripts/checkupdates",
+        "exec": "~/.config/waybar/scripts/checkupdates",
         "signal": 8,
-        "on-click": "$HOME/.config/waybar/scripts/updatepkgs"
+        "on-click": "~/.config/waybar/scripts/updatepkgs"
     },
     "custom/weather": {
         "exec": "curl -s 'https://wttr.in/?format=1' | sed 's/  \\+/ /g'",
