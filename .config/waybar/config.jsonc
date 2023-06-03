@@ -16,7 +16,6 @@
     "modules-right": [
 	"hyprland/language",
         "pulseaudio",
-        "network",
         "tray"
     ],
     "hyprland/window": {
@@ -65,10 +64,10 @@
     "network": {
         "format-wifi": "{icon} {essid}",
         "format-ethernet": "󰈀  {ifname}",
-        "tooltip-format": "󰈁 {ifname} via {gwaddr}",
+        "tooltip-format": "󰛳 {ifname} via {gwaddr}",
         "format-linked": " {ifname} (No IP)",
-        "format-disconnected": "󰈂",
-        "format-alt": "󰈁 {ifname}: {ipaddr}/{cidr}",
+        "format-disconnected": "󰲛",
+        "format-alt": "󰛳 {ifname}: {ipaddr}/{cidr}",
         "on-click-right": "nm-connection-editor",
         "format-icons": [
             "󰤨",
