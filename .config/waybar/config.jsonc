@@ -58,7 +58,7 @@
         "timezone": "Europe/Warsaw",
         "tooltip-format": false,
         "format-alt": "󰥔 {:%T    󰸗 %F}",
-        "format": "󰥔 {:%H:%M    󰸗 %e %b}",
+        "format": "󰥔 {:%H:%M    󰸗 %a, %e %b}",
         "on-click-right": "evolution -c calendar"
     },
     "network": {
