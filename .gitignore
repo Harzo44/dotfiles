@@ -48,6 +48,7 @@ go
 !.config/fish
 .config/fish/*
 !.config/fish/conf.d
+.config/fish/conf.d/local
 !.config/foot
 !.config/git
 !.config/gtk-3.0
