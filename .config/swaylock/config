@@ -7,7 +7,7 @@ indicator-radius=120
 indicator-thickness=20
 clock
 timestr=%R
-datestr=%A, %d %B
+datestr=%A, %-d %B
 color=2E3440
 bs-hl-color=BF616A
 key-hl-color=A3BE8C
@@ -22,18 +22,22 @@ layout-bg-color=3B4252
 layout-border-color=4C566A
 layout-text-color=D8DEE9
 
+line-clear-color=2E3440
 text-clear-color=D8DEE9
-ring-clear-color=88C0D0
+ring-clear-color=4C566A
 inside-clear-color=3B4252
 
+line-caps-lock-color=2E3440
 text-caps-lock-color=D8DEE9
 inside-caps-lock-color=3B4252
 ring-caps-lock-color=D08770
 
+line-ver-color=2E3440
 text-ver-color=D8DEE9
 ring-ver-color=5E81AC
 inside-ver-color=3B4252
 
+line-wrong-color=2E3440
 text-wrong-color=D8DEE9
 ring-wrong-color=bf616a
 inside-wrong-color=3B4252
