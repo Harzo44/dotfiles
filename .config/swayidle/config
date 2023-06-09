@@ -1,1 +1,1 @@
-timeout 300 'hyprctl dispatcher dpms off && swaylock'
+timeout 300 'hyprctl dispatcher dpms off && ~/.local/bin/scripts/system/screenlock'
