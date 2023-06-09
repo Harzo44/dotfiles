@@ -4,7 +4,7 @@ x-scheme-handler/mailto=userapp-Thunderbird-OTFG41.desktop;
 x-scheme-handler/mid=userapp-Thunderbird-OTFG41.desktop;
 x-scheme-handler/webcal=userapp-Thunderbird-9ZNG41.desktop;
 x-scheme-handler/webcals=userapp-Thunderbird-9ZNG41.desktop;
-image/jpeg=gimp.desktop;upscayl.desktop;
+image/jpeg=upscayl.desktop;gimp.desktop;
 x-scheme-handler/http=firefox.desktop;
 x-scheme-handler/https=firefox.desktop;
 x-scheme-handler/chrome=firefox.desktop;
@@ -16,6 +16,7 @@ application/xhtml+xml=firefox.desktop;
 application/x-extension-xhtml=firefox.desktop;
 application/x-extension-xht=firefox.desktop;
 image/png=gimp.desktop;
+application/json=nvim.desktop;
 
 [Default Applications]
 application/x-extension-ics=userapp-Thunderbird-9ZNG41.desktop;
@@ -42,3 +43,4 @@ application/x-extension-shtml=firefox.desktop
 application/xhtml+xml=firefox.desktop
 application/x-extension-xhtml=firefox.desktop
 application/x-extension-xht=firefox.desktop
+application/json=nvim.desktop
