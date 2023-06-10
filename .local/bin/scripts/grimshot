@@ -11,7 +11,7 @@ esac
 
 filename=~/Pictures/Screenshots/Screenshot_"$(date +'%Y%m%d_%H%M%S').png"
 
-grimblast copysave "$target" "$filename" || exit 1
+grimblast --freeze copysave "$target" "$filename" || exit 1
 
 action="$(dunstify \
     -i "$filename" \
