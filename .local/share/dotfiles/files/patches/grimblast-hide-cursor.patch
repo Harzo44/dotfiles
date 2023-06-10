@@ -1,0 +1,26 @@
+--- /usr/bin/grimblast	2023-06-08 21:37:37.000000000 +0200
++++ ../../../../bin/grimblast	2023-06-09 14:42:41.857503879 +0200
+@@ -131,6 +131,14 @@
+   FILE=$1
+   GEOM=$2
+   OUTPUT=$3
++
++  ORIG_POS="$(hyprctl cursorpos | tr -d ,)"
++  MONITOR="$(hyprctl monitors -j | jq -r '.[] | select(.focused == true).name')"
++  HEIGHT="$(hyprctl monitors -j | jq -r '.[] | select(.name == "'$MONITOR'").height')"
++  HEIGHT="$(echo "$HEIGHT - 1" | bc)"
++
++  hyprctl dispatch movecursor "0 $HEIGHT" > /dev/null
++
+   if [ -n "$OUTPUT" ]; then
+     grim ${CURSOR:+-c} -o "$OUTPUT" "$FILE" || die "Unable to invoke grim"
+   elif [ -z "$GEOM" ]; then
+@@ -138,6 +146,8 @@
+   else
+     grim ${CURSOR:+-c} -g "$GEOM" "$FILE" || die "Unable to invoke grim"
+   fi
++
++  hyprctl dispatch movecursor "$ORIG_POS" > /dev/null
+ }
+ 
+ if [ "$ACTION" = "check" ]; then
