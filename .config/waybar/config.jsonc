@@ -7,13 +7,13 @@
         "clock",
         "custom/weather",
         "custom/pacman",
-        "idle_inhibitor",
 	"hyprland/submap"
     ],
     "modules-center": [
         "wlr/workspaces"
     ],
     "modules-right": [
+        "idle_inhibitor",
 	"hyprland/language",
         "pulseaudio",
         "tray"
