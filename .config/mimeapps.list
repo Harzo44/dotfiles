@@ -17,6 +17,8 @@ application/x-extension-xhtml=firefox.desktop;
 application/x-extension-xht=firefox.desktop;
 image/png=gimp.desktop;
 application/json=nvim.desktop;
+video/mp4=mpv.desktop;
+video/quicktime=mpv.desktop;
 
 [Default Applications]
 application/x-extension-ics=userapp-Thunderbird-9ZNG41.desktop;
@@ -44,3 +46,5 @@ application/xhtml+xml=firefox.desktop
 application/x-extension-xhtml=firefox.desktop
 application/x-extension-xht=firefox.desktop
 application/json=nvim.desktop
+video/mp4=mpv.desktop
+video/quicktime=mpv.desktop
