@@ -47,6 +47,7 @@ go
 !.config/GIMP/2.10/palettes
 !.config/Kvantum
 !.config/Thunar
+.config/Thunar/renamerrc
 .config/Thunar/accels.scm
 !.config/fish
 .config/fish/*
