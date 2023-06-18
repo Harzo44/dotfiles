@@ -1,6 +1,6 @@
 #!/bin/sh
 
-option="$(printf "⏻   Shutdown\n   Reboot\n   Suspend\n   Hibernate" | \
+option="$(printf "󰍃   Log out\n⏻   Shutdown\n   Reboot\n   Suspend\n   Hibernate" | \
           wofi --dmenu -p "Session")"
 
 dialogue_box() {
@@ -8,21 +8,26 @@ dialogue_box() {
 	--text="$1"
 }
 
+dialogue_box "Are you sure?" || exit 0
+
 case $option in
+    *Log\ out)
+	pkill -u $USER
+	;;
     *Shutdown)
-        dialogue_box "Are you sure you want to shutdown this computer?" && \
-            systemctl poweroff -i
+        systemctl poweroff -i
         ;;
     *Reboot)
-        dialogue_box "Are you sure you want to reboot this computer?" && \
-            systemctl reboot -i
+        systemctl reboot -i
         ;;
     *Suspend)
-        dialogue_box "Are you sure you want to suspend this computer?" && \
-            systemctl suspend -i
+	~/.local/bin/scripts/system/screenlock &
+	sleep 1
+        systemctl suspend -i
         ;;
     *Hibernate)
-        dialogue_box "Are you sure you want to hibernate this computer?" && \
-            systemctl hibernate -i
+	~/.local/bin/scripts/system/screenlock &
+	sleep 1
+        systemctl hibernate -i
         ;;
 esac
