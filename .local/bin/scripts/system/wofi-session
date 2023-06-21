@@ -1,7 +1,6 @@
 #!/bin/sh
 
-option="$(printf "󰍃   Log out\n⏻   Shutdown\n   Reboot\n   Suspend\n   Hibernate" | \
-          wofi --dmenu -p "Session")"
+option="$(printf "󰍃   Log out\n⏻   Shutdown\n   Reboot\n   Suspend\n   Hibernate" | wofi --dmenu -p "Session")" || exit 0
 
 dialogue_box() {
     yad --image=gtk-dialog-question \
