@@ -3,6 +3,7 @@ as-tree
 checkupdates-with-aur
 delta
 downgrade
+emote
 fsearch-git
 grimblast-git
 hyprland-nvidia-git
@@ -17,8 +18,8 @@ sddm-git
 swaylock-effects
 swayosd-git
 swww
-ttf-ubraille
 ttf-ms-win11-auto
 ttf-twemoji
+ttf-ubraille
 waybar-hyprland-git
 xdg-desktop-portal-hyprland-git
