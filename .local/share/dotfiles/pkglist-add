@@ -36,6 +36,7 @@ polkit-gnome
 qqc2-desktop-style
 qt5ct
 qt6ct
+realtime-privileges
 seatd
 starship
 sudo
