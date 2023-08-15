@@ -7,7 +7,6 @@ fish_add_path ~/.local/bin
 # Neovim
 alias vi  nvim
 alias vim nvim
-set -Ux EDITOR nvim
 
 # lsd
 alias ls   lsd
@@ -25,3 +24,7 @@ function rm
 end
 alias trm trash-put
 alias trmf '/usr/bin/rm -rfv'
+
+# Default apps
+set -Ux BROWSER firefox
+set -Ux EDITOR nvim
