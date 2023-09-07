@@ -7,6 +7,7 @@
         "clock",
         "custom/weather",
         "custom/pacman",
+	"hyprland/window",
 	"hyprland/submap"
     ],
     "modules-center": [
@@ -18,11 +19,6 @@
         "pulseaudio",
         "tray"
     ],
-    "hyprland/window": {
-        "format": "{}",
-        "separate-outputs": true,
-        "max-length": 50
-    },
     "hyprland/workspaces": {
         "format": "{icon}",
         "on-click": "activate",
@@ -47,7 +43,9 @@
             "14": ["DP-3"],
             "15": ["DP-3"],
             "16": ["DP-3"]
-        }
+        },
+	"on-scroll-down": "hyprctl dispatch workspace m-1",
+	"on-scroll-up": "hyprctl dispatch workspace m+1"
     },
     "tray": {
         "icon-size": 16,
@@ -116,6 +114,11 @@
             "activated": "",
             "deactivated": ""
         }
+    },
+    "hyprland/window": {
+        "format": "󱂬 <small>{}</small>",
+	"separate-outputs": true,
+	"max-length": 50
     },
     "hyprland/submap": {
         "format": "{}",
