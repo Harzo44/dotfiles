@@ -105,7 +105,7 @@
         "on-click": "~/.config/waybar/scripts/updatepkgs"
     },
     "custom/weather": {
-        "exec": "curl -s 'https://wttr.in/?format=1' | sed 's/  \\+/ /g'",
+        "exec": "curl -s 'https://wttr.in/?format=1' | sed 's/  \\+/ /g' | grep -v Unknown",
         "interval": 3600
     },
     "idle_inhibitor": {
