@@ -10,7 +10,7 @@
 	"hyprland/submap"
     ],
     "modules-center": [
-        "wlr/workspaces"
+        "hyprland/workspaces"
     ],
     "modules-right": [
         "idle_inhibitor",
@@ -23,7 +23,7 @@
         "separate-outputs": true,
         "max-length": 50
     },
-    "wlr/workspaces": {
+    "hyprland/workspaces": {
         "format": "{icon}",
         "on-click": "activate",
         "format-icons": {
