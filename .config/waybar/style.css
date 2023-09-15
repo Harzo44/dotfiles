@@ -20,7 +20,7 @@
     }
 }
 
-@define-color bg #2e3440;
+@define-color bg rgba(46, 52, 64, 0.5);
 @define-color light #d8dee9;
 @define-color warning #ebcb8b;
 @define-color critical #bf616a;
@@ -120,4 +120,3 @@ tooltip {
     color: @warning;
     opacity: 1;
 }
-
